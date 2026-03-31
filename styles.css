@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Titillium Web", sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+img[alt="Logo Image"] {
+    display: block;
+    margin: 20px auto;
+}
+
+nav {
+    background-color: #3C4F68;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 12px;
+    border-radius: 12px;
+    width: 90%;
+    margin: 0 auto 20px auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #223B5C;
+}
+
+#welcome_section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#welcome_section h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+#main {
+    width: 85%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#main h2 {
+    margin-top: 25px;
+    font-size: 1.8rem;
+}
+
+#main p {
+    margin: 15px 0;
+}
+
+#main img {
+    margin: 20px auto;
+    display: block;
+    border-radius: 12px;
+}
+
+#main p:nth-of-type(3) {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #3C4F68;
+    color: white;
+}
+
+footer img {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}

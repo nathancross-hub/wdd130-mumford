@@ -7,20 +7,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #navimg {
+            float: left;
+            margin: 15px;
+        }
+
         nav {
             background-color: #8E0D08;
+            width: 100%;
+            padding: 5px 0px;
+            height: 100px;
+            align-items: center;
         }
 
         nav a {
+            display: block;
+            position: relative;
             color: #F1E0CB;
             font-family: "Roboto", sans-serif;
+            text-decoration: none;
+            transition: 0.3s;
+            text-align: center;
         }
 
-        nav a:hover {
+        nav ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 300px;
+            padding: 0px;
+            margin-left: auto;
+            place-items: center;
+        }
+
+        nav ul li {
+            border-right: 2px solid #BBCDD7;
+            width: 100px;
+            align-items: center;
+            list-style-type: none;
+        }
+
+        nav li:last-child {
+            border: none;
+        }
+
+        nav li:hover {
             background-color: #39112B;
         }
+
 
         main {
             text-align: center;
@@ -63,17 +102,31 @@
             color: #F1E0CB;
             font-family: "Roboto", sans-serif;
             margin: 0px;
+            padding: 20px;
+            text-align: right;
+            height: 100px;
+        }
+
+        footer img {
+            margin: 10px 0px;
+            float: left;
+        }
+
+        footer p {
+            margin: 10px;
         }
         
     </style>
 </head>
 
 <body>
-    <img src="../images/logo.png" alt="Logo Image" height="80px" width="auto">
+    <img id="navimg" src="../images/logo.png" alt="Logo Image" height="80px" width="auto">
     <nav>
-        <a href="../index.html">Home</a>
-        <a href="../about_me/index.html">About Me</a>
-        <a href="index.html">My Work</a>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about_me/index.html">About Me</a></li>
+            <li><a href="index.html">My Work</a></li>
+        </ul>
     </nav>
     <main>
         <div id="wrapper">
@@ -105,7 +158,7 @@
     </main>
 </body>
 <footer>
-    <img src="../images/logo.png" alt="Logo Image" height="80px" width="auto">
+    <img id="footimg" src="../images/logo.png" alt="Logo Image" height="80px" width="auto">
     <p>Personal Site | Creative Space</p>
     <p>©2026 Jacob Mumford</p>
 </footer>
